@@ -1,0 +1,245 @@
+/* CSS comment */
+/*
+.box - class
+#box1 - id
+*/
+/*font face */
+@font-face {
+    font-family: RoboMono;
+    src: url(font/RobotoMono-SemiBoldItalic.ttf);
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+body{
+    background-color: rgb(0, 36, 98);
+    margin: 40px;
+    background-image: url(images/cat_cover.jpg);
+    /* prevents tiling */
+    background-repeat: no-repeat; 
+    background-position: center;
+    /* background-attachment
+    determines if bgimg scrolls with webpage*/
+    background-size: cover;
+    background-blend-mode:difference;
+}
+* {
+    box-sizing: border-box;
+}
+.box{
+    height: auto;
+    width: 50%;
+    float:left;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 25%;
+    /* max-width disregards width, likewise with min-width and height*/
+    /* max-height and min-height are based off 100vh, aka viewport-height*/
+    /* width: 50px;
+    height: 50px; */
+}
+
+h1::first-letter{
+    font-size: 2em;
+    font-style: oblique;
+}
+p::first-line{
+    background-color: blanchedalmond;
+}
+
+li:hover{
+    background-color: #bbff00;
+}
+#greeting p{
+    background-color: rgb(0, 55, 29);
+    font-size: x-large;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}
+/* li:not(:hover){
+    background-color: cornflowerblue;
+} */
+/*li:nth-child(3n+1){
+    background-color: rgb(246, 255, 0);
+}*/
+h1{
+    font-family: 'RoboMono', Tahoma, Geneva, Verdana, sans-serif;
+    /*short hand syntax*/
+    /* border: size width color;*/
+    border: 3px solid black;
+    border-radius: 13px;
+    text-shadow: 3px 3px 5px red,-3px -3px 5px aqua;
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: cornsilk;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar li{
+    float: left;
+}
+
+/*p{
+    font-family: "RoboMono";
+    font-size: 0.9em;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 3px solid lightcoral;
+}*/
+
+/*div{
+    border: 2px solid rgb(255, 0, 0);
+    width: 50px;
+    height: 50px;
+    overflow: auto;
+    background-color: rgb(223, 2, 112);
+    /*display: inline;*/
+    /* overflow:clip us commonly used with 
+    overflow-clip-margin
+}*/
+
+#container{
+    border: 2px solid black;
+}
+
+.Dropdown button{
+    background-color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.Dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.Dropdown .content{
+    background-color: azure;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 5px 5px 5px rgb(255, 255, 255);
+    display: none;
+}
+
+.Dropdown:hover .content{
+    display: block;
+}
+
+.Dropdown{
+    display: inline;
+}
+
+#container + p{
+    background-color: greenyellow;
+}
+
+#fruit li::before{
+    content: "⭐ ";
+}
+#Apple::after{
+    content: " 🍎";
+}
+#fruit li::marker{
+    content: "✔️";
+    color: #07c12c;
+    font-size: larger;
+}
+
+p::selection{
+    color: aliceblue;
+    font-size: 2em;
+}
+
+a:link{
+    color: #bbff00;
+}
+a:hover{
+    color: azure;
+    font-size: 1.5em;
+}
+button:hover{
+    font-size: 200%;
+    color: #bbff00;
+}
+span{
+    background-color: rgb(12, 193, 193);
+    width: 50px;
+    height: 50px;
+    display: inline;
+    /* width and height dosent apply to span, as it isnt
+    a block level element, use display: block to 
+    display */
+    /* visibility: none means its hidden but still takes up
+    space on the screen
+    display:none dosent display at all, freeing up screen space*/
+}
+#p1{
+    color: red;
+}
+#p2{
+    color: yellow;
+}
+#p3{
+    color: #59cc5f;
+}
+#p4{
+    color: hsl(304, 100%, 50%);
+}
+#p5{
+    color: deeppink;
+}
+.odd{
+    background-color: azure;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    box-shadow: 5px 5px 3px;
+}
+#box11{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(8, 149, 102);
+    position: sticky;
+    top:0px;
+    left: 100px;
+}
+#box22{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 36, 7);
+    position: static;
+    top: 50px;
+    left: 50px;
+}
+#box2{
+    background-color: red;
+    margin-left: 50px;
+}
+#box3{
+    background-color: aqua;
+}
+.even{
+    background-color: peachpuff;
+}
+#img1{
+    float: left;
+    margin-right: 10px;
+}
+#img2{
+    float: right;
+    margin-right: 10px;
+}

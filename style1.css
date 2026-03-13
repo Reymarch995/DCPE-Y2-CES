@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: larger;
+}
+*{
+    box-sizing: border-box;
+}
+nav li{
+    display: inline-flex;
+    text-align: center;
+    list-style-type: none;
+    padding: auto;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+.navbar{
+    background-color: aliceblue;
+    height: 50px;
+}
+body{
+    margin: 0px;
+}
+header{
+    text-align: center;
+    padding: 7px;
+}
+aside{
+    width: 20%;
+    padding: 10px;
+}
+section{
+    width: 50%;
+}
+article{
+    width: 30%;
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+footer{
+    display: block;
+}
+@media screen and (max-width:600px) {
+    aside, section, article{
+        width: 100%;
+    }
+}
